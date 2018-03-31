@@ -3,7 +3,7 @@
 namespace Sum100NumbersWith50DigitsEach
 {
     //============================================
-    // Without Using System.Numerics / BigInteger
+    // Without Using System.Numerics
     //============================================
 
     class Program
