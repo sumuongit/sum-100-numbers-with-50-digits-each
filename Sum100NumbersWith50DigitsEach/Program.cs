@@ -2,9 +2,9 @@
 
 namespace Sum100NumbersWith50DigitsEach
 {
-    //============================================
+    //===============================
     // Without Using System.Numerics
-    //============================================
+    //===============================
 
     class Program
     {
@@ -113,7 +113,8 @@ namespace Sum100NumbersWith50DigitsEach
 
             int[] resultNumber = new int[50];
             int temp = 0;
-
+            
+            //AS WE ALL KNOW THAT SUM STARTS FROM RIGHT MOST COLUMN 
             for (int i = Number0.Length - 1; i >= 0; i--)
             {
                 resultNumber[i] = Number0[i] + Number1[i] + Number2[i] + Number3[i] + Number4[i] + Number5[i] + Number6[i] + Number7[i] + Number8[i] + Number9[i] +
@@ -127,20 +128,29 @@ namespace Sum100NumbersWith50DigitsEach
                     Number80[i] + Number81[i] + Number82[i] + Number83[i] + Number84[i] + Number85[i] + Number86[i] + Number87[i] + Number88[i] + Number89[i] +
                     Number90[i] + Number91[i] + Number92[i] + Number93[i] + Number94[i] + Number95[i] + Number96[i] + Number97[i] + Number98[i] + Number99[i] + temp;
 
+                //IF SUMMATION OF A SINGLE COLUMN VALUES IS MORE THAN TWO DIGITS AND THE COLUMN IS NOT LEFT MOST COLUMN
                 if (resultNumber[i] > 9 && i != 0)
                 {
+                    //EXTRACT THE VALUE (IN HAND) TO BE SUMMED WITH THE NEXT COLUMN VALUES
                     temp = Convert.ToInt32(resultNumber[i].ToString().Substring(0, resultNumber[i].ToString().Length - 1));
+
+                    //EXTRACT THE VALUE TO BE PLACED UNDER THE COLUMN
                     resultNumber[i] = Convert.ToInt32(resultNumber[i].ToString().Remove(0, resultNumber[i].ToString().Length - 1));
                 }
                 else
+                {
                     temp = 0;
+                }
             }
 
             Console.WriteLine("\n========================================================");
             Console.WriteLine("Resultant number after addition without using Numerics:   ");
             Console.WriteLine("========================================================\n");
-            foreach (int i in resultNumber)
-                Console.Write(i);
+            
+            foreach (int item in resultNumber)
+            {
+                Console.Write(item);
+            }
 
             Console.ReadKey();
         }
