@@ -7,12 +7,12 @@
 This application sum-up 100 numbers with 50 digits each without using System.Numeric class
 	
 ## Technologies
-Application is created with:
+This application is created with:
 * Visual Studio version: 2013
 * C# 
 	
 ## Setup
-To run this application, install it locally using git:
+To run this application, building the source locally using git:
 
 ```
 $ git clone https://github.com/sumuongit/sum-100-numbers-with-50-digits-each.git
