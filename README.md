@@ -8,7 +8,7 @@ This application sum-up 100 numbers with 50 digits each without using System.Num
 	
 ## Technologies
 This application is created with:
-* Visual Studio version: 2013
+* Visual Studio 2013
 * C# 
 	
 ## Setup
