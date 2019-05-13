@@ -2,9 +2,9 @@
 
 namespace Sum100NumbersWith50DigitsEach
 {
-    //===============================
-    // Without Using System.Numerics
-    //===============================
+    //=====================================
+    // Without Using System.Numerics class
+    //=====================================
 
     class Program
     {
@@ -143,9 +143,8 @@ namespace Sum100NumbersWith50DigitsEach
                 }
             }
 
-            Console.WriteLine("\n==============================================================");
-            Console.WriteLine("Resultant number after addition without using System.Numerics:   ");
-            Console.WriteLine("==============================================================\n");
+            Console.WriteLine("OUTPUT: Resultant number after addition without using System.Numerics class:   ");
+            Console.WriteLine("============================================================================");
             
             foreach (int item in resultNumber)
             {
