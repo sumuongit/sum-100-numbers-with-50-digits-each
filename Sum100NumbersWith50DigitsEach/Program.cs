@@ -143,9 +143,9 @@ namespace Sum100NumbersWith50DigitsEach
                 }
             }
 
-            Console.WriteLine("\n========================================================");
-            Console.WriteLine("Resultant number after addition without using Numerics:   ");
-            Console.WriteLine("========================================================\n");
+            Console.WriteLine("\n==============================================================");
+            Console.WriteLine("Resultant number after addition without using System.Numerics:   ");
+            Console.WriteLine("==============================================================\n");
             
             foreach (int item in resultNumber)
             {
